@@ -1,6 +1,6 @@
 package com.spring_security.security;
 
-/*import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -15,7 +15,7 @@ public class DefaultSpringSecurityConfig {
     @Bean
     public UserDetailsService userDetailsService(){
         var inMemoryUserDetailsManager = new InMemoryUserDetailsManager();
-        var user = User.withUsername("Tuhin").password("123").authorities("read").build();
+        var user = User.withUsername("Tuhinn").password("123").authorities("read").build();
         inMemoryUserDetailsManager.createUser(user);
 
         return inMemoryUserDetailsManager;
@@ -25,4 +25,4 @@ public class DefaultSpringSecurityConfig {
     public PasswordEncoder passwordEncoder(){
         return NoOpPasswordEncoder.getInstance();
     }
-}*/
+}
